@@ -67,6 +67,12 @@ extension FlowingMenuTransitionManager {
     tapGesture.addTarget(self, action: #selector(FlowingMenuTransitionManager.tapToDismissAction(_:)))
 
     view.addGestureRecognizer(tapGesture)
+    
+    if((gestureRecognizerDelegate) != nil)
+    {
+        tapGesture.delegate = gestureRecognizerDelegate;
+    }
+
   }
 
   // MARK: - Responding to Gesture Events

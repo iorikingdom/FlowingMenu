@@ -46,6 +46,8 @@ public final class FlowingMenuTransitionManager: UIPercentDrivenInteractiveTrans
   */
   public weak var delegate: FlowingMenuDelegate?
 
+  public weak var gestureRecognizerDelegate:UIGestureRecognizerDelegate?;
+
   // MARK: - Managing the Animation Mode
 
   /// Defines the animation mode of the transition.
